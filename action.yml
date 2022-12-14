@@ -1,10 +1,21 @@
 name: Reusable Workflow
 
+#inputs:
+#  username:
+#    description: 'Username on the remote web site'
+#    required: true
+
+#runs:
+#  using: "composite"
+#  steps:
+#    - name: echo
+#      shell: bash
+#      run: |
+#        echo from reusable workflow
+#        ls -l
+#
+#
 runs:
-  using: "composite"
-  steps:
-    - name: echo
-      shell: bash
-      run: |
-        echo from reusable workflow
-        ls -l
+  using: "docker"
+  image: "Dockerfile"
+
