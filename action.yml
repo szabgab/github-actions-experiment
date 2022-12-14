@@ -1,8 +1,5 @@
 name: Reusable Workflow
 
-#on:
-#  workflow_call:
-#
 runs:
   using: "composite"
   steps:
@@ -11,31 +8,3 @@ runs:
       run: |
         echo from reusable workflow
         ls -l
-
-
-
-#jobs:
-#  test:
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#    #- name: Checkout
-#    #  uses: actions/checkout@v3
-#
-#    #- name: Set up Python
-#    #  uses: actions/setup-python@v4
-#    #  with:
-#    #    python-version: 3.11
-#
-#    #- name: Install dependencies
-#    #  run: |
-#    #    pip install -r requirements.txt
-#    #    pip install pytest
-#
-#    #- name: Check Python version
-#    #  run: python -V
-#
-#    #- name: Test with pytest
-#    #  run: pytest -vs
-#
-
